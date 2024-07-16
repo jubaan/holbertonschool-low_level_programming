@@ -12,7 +12,7 @@
 int main(void)
 {
 	char str[9] = "_putchar";
-	size_t int i = 0;
+	size_t i = 0;
 
 	while (i < sizeof(str) - 1)
 	{
