@@ -15,7 +15,7 @@ int main(void)
 
 	while (i < sizeof(str[]) - 1)
 	{
-		write(1, str[i], 1);
+		char write(1, str[i], 1);
 		i++;
 	}
 	write(1, "\n", 1);
