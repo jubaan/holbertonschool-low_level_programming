@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
  * main - Entry point
@@ -10,12 +11,12 @@
 
 int main(void)
 {
-	char str[] = "_putchar";
+	char str = "_putchar";
 	int i = 0;
 
-	while (i < sizeof(str[]) - 1)
+	while (i < sizeof(str) - 1)
 	{
-		char write(1, str[i], 1);
+		write(1, &str[i], 1);
 		i++;
 	}
 	write(1, "\n", 1);
