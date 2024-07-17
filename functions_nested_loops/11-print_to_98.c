@@ -18,12 +18,17 @@ void print_to_98(int n)
 			n--;
 		}
 	}
-
-	while (n <= 98)
+	else if
 	{
-		printf("%0d", n);
-		n++;
+		while (n < 98)
+		{
+			printf("%0d", n);
+			n++;
+		}
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
 
