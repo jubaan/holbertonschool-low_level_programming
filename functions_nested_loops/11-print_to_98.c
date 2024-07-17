@@ -16,6 +16,10 @@ void print_to_98(int n)
 		{
 			printf("%0d, ", n);
 			n--;
+			if (n == 98)
+			{
+				printf("%0d\n", 98);
+			}
 		}
 	}
 	else if (n < 98)
@@ -24,6 +28,11 @@ void print_to_98(int n)
 		{
 			printf("%0d, ", n);
 			n++;
+
+			if (n == 98)
+			{
+				printf("%0d\n", 98);
+			}
 		}
 	}
 	else
