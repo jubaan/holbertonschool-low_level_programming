@@ -10,13 +10,11 @@
 
 int print_last_digit(int n)
 {
-	int last_digit;
-
 	if (n < 0)
 		n = -n;
 
 	last_digit = n % 10;
-	write(1, &last_digit, 1);
-	return (last_digit);
+	write(1, (&n % 10) + '0', 1);
+	return (n % 10);
 }
 
