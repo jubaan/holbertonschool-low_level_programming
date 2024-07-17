@@ -28,8 +28,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		print(98);
-		_putchar('\n');
+		printf("0d%\n", 98);
 	}
 }
 
