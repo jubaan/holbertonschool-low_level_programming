@@ -24,5 +24,6 @@ void print_to_98(int n)
 		printf("%0d", n);
 		n++;
 	}
+	_putchar('\n');
 }
 
