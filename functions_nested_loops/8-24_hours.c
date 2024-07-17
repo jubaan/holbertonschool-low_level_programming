@@ -4,7 +4,7 @@
 /**
  * jack_bauer - This functions prints the time from 00:00 to 23:59
  *
- * Return: Always 0 (Success)
+ * Return: Void
  */
 
 void jack_bauer(void)
@@ -21,6 +21,5 @@ void jack_bauer(void)
 		}
 		hours++;
 	}
-	return (0);
 }
 
