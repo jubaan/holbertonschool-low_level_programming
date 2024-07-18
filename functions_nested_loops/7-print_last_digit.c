@@ -15,9 +15,14 @@ int print_last_digit(int n)
 	char c;
 
 	if (n == INT_MIN)
+	{
 		r = 8;
-	else if (n < 0)
 		n = -n;
+	}
+	else if (n < 0)
+	{
+		n = -n;
+	}
 
 	r = n % 10;
 	c = r + '0';
