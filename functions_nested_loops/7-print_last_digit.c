@@ -17,7 +17,7 @@ int print_last_digit(int n)
 	if (n == INT_MIN)
 	{
 		r = 8;
-		n = -n;
+		n = -(n + 1);
 	}
 	else if (n < 0)
 	{
