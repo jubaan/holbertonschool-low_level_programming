@@ -11,23 +11,14 @@
 
 int print_last_digit(int n)
 {
-	int r;
-	char c;
+	int last_digit;
 
-	if (n == INT_MIN)
-	{
-		r = 8;
-		n = -(n + 1);
-	}
-	else if (n < 0)
-	{
+	if (n < 0)
 		n = -n;
-	}
 
-	r = n % 10;
-	c = r + '0';
+	last_digit = n % 10;
 
-	write(1, &c, 1);
-	return (r);
+	_putchar(last_digit + '0');
+	return (last_digit);
 }
 
