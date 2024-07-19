@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -13,11 +12,11 @@ void print_numbers(void)
 
 	while (i <= 9)
 	{
-		printf("%d", i);
+		_putchar(i + 47);
 		i++;
 	}	
 
-	printf("\n");
+	_putchar("\n");
 	return (void);
 }
 
