@@ -8,7 +8,7 @@
  * For numbers which are multiples of both three and five print FizzBuzz
  */
 
-int fizz_buzz(void)
+void fizz_buzz(void)
 {
 	int i = 1;
 
