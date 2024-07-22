@@ -6,7 +6,6 @@
  * For multiples of three print Fizz instead of the number
  * For the multiples of five print Buzz
  * For numbers which are multiples of both three and five print FizzBuzz
- * main - calls fizz_buzz
  */
 
 void fizz_buzz(void)
@@ -32,6 +31,12 @@ void fizz_buzz(void)
 
 	printf("\n");
 }
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
 
 int main(void)
 {
