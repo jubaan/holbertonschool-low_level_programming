@@ -11,12 +11,12 @@ void print_rev(char *s)
 {
 	int len = _strlen(s);
 
-	while (len >= 0)
+	while (len > 0)
 	{
 		write(1, &s[len], 1);
 		len--;
 	}
-	write(1, "\0", 1);
+	write(1, "\n", 1);
 }
 
 /**
