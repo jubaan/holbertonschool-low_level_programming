@@ -5,22 +5,20 @@
  * @s1: string a
  * @s2: string b
  *
- * Return: difference between first different character
+ * Return: returns an integer indicating the
+ * result of the comparison
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	while (*s1 != '\0' && *s2 != '\0')
+	while (*s1 && *s2)
 	{
-		if (*s1 == *s2)
-			return (0);
-		else if (*s1 > *s2)
+		if (*s1 != *s2)
 			return (*s1 - *s2);
-		else
-			return (*s2 - *s1);
 
 		s1++;
 		s2++;
 	}
 
+	return (*s1 - *s2);
 }
