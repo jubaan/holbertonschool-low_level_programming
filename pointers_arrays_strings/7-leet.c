@@ -29,5 +29,5 @@ char *leet(char *str)
 		i++;
 	}
 
-	return (s);
+	return (str);
 }
