@@ -14,14 +14,14 @@ char *leet(char *str)
 	char *s = "aAeEoOtTlL";
 	char *r = "4433007711";
 
-	while (s[i])
+	while (str[i])
 	{
 		j = 0;
 
-		while (s[j])
+		while (str[j])
 		{
-			if (s[i] == s[j])
-				s[i] = r[j];
+			if (str[i] == s[j])
+				str[i] = r[j];
 
 			j++;
 		}
