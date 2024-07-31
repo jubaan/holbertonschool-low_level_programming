@@ -18,7 +18,7 @@ char *leet(char *str)
 	{
 		j = 0;
 
-		while (str[j])
+		while (s[j])
 		{
 			if (str[i] == s[j])
 				str[i] = r[j];
