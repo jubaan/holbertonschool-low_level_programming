@@ -12,9 +12,12 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0;
+	char *start = accept;
 
 	while (*s)
 	{
+		accept = start;
+
 		while (*accept)
 		{
 			if (*s == *accept)
@@ -22,6 +25,9 @@ unsigned int _strspn(char *s, char *accept)
 
 			accept++;
 		}
+
+		if (!*accept)
+			break;
 
 		i++;
 		s++;
