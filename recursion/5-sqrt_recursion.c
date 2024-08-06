@@ -17,7 +17,7 @@ int _sqrt_recursion(int n)
 	else if (n < 2)
 		return (n);
 
-	return (_sqrt_recursion(n));
+	return (_sqrt_helper(n, 0, n));
 }
 
 /**
