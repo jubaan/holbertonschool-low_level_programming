@@ -38,10 +38,10 @@ int _sqrt_helper(int n, int l, int h)
 
 	m = (l + h) / 2;
 
-	if (m * m == n)
-		return (m);
-	else if (m * m < n)
-		return (_sqrt_helper(n, m + 1, h));
-	else
+	if (m > n / m)
 		return (_sqrt_helper(n, l, m - 1));
+	else if (m * m == n)
+		return (m);
+	else
+		return (_sqrt_helper(n, m + 1, h));
 }
