@@ -29,14 +29,12 @@ int _sqrt_recursion(int n)
  * Return: natural square root or -1 if number doesn't have a natural
  */
 
-int  _sqrt_helper(int n, int l, int h)
+int _sqrt_helper(int n, int l, int h)
 {
 	if (l > h)
 		return (-1);
 
-	int m;
-
-	m = (l + h) / 2;
+	int m = (l + h) / 2;
 
 	if (m * m == n)
 		return (m);
