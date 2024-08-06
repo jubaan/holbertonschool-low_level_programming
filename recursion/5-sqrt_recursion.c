@@ -40,8 +40,7 @@ int _sqrt_helper(int n, int l, int h)
 
 	if (m * m == n)
 		return (m);
-	if (l >= h)
-		return (-1);
+
 	if (m * m < n)
 		return (_sqrt_helper(n, m + 1, h));
 
