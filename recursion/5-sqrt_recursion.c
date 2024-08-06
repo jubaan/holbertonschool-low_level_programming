@@ -38,11 +38,11 @@ int _sqrt_helper(int n, int l, int h)
 
 	m = (l + h) / 2;
 
-	if (m == 0 || m > n / m)
-		return (_sqrt_helper(n, l, m - 1));
-
 	if (m * m == n)
 		return (m);
+
+	if (m * m < n)
+		return (_sqrt_helper(n, m + 1, h));
 
 	return (_sqrt_helper(n, l, m - 1));
 }
