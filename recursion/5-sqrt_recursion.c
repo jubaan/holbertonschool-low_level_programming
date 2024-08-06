@@ -33,7 +33,7 @@ int _sqrt_helper(int n, int l, int h)
 {
 	int m;
 
-	if (l > h)
+	if (l > h || l == h)
 		return (-1);
 
 	m = (l + h) / 2;
