@@ -5,8 +5,7 @@
  * _putchar - prints c to stdout
  * @c: string to print
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: On success 1. or -1 on error
  */
 
 int _putchar(char c)
