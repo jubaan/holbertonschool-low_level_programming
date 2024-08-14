@@ -2,21 +2,14 @@
 #include <unistd.h>
 
 /**
- * _putchar - prints "_putchar"
+ * _putchar - prints c to stdout
+ * @c: string to print
  *
- * Return: void
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
-void _putchar(void)
+int _putchar(char c)
 {
-	char str[9] = "_putchar";
-	size_t i = 0;
-
-	while (i < sizeof(str) - 1)
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
-	write(1, "\n", 1);
+	return (write(1, &c, 1));
 }
-
