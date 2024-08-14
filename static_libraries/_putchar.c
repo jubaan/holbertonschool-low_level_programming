@@ -4,10 +4,10 @@
 /**
  * _putchar - prints "_putchar"
  *
- * Return: 0
+ * Return: void
  */
 
-int _putchar(void)
+void _putchar(void)
 {
 	char str[9] = "_putchar";
 	size_t i = 0;
@@ -18,6 +18,5 @@ int _putchar(void)
 		i++;
 	}
 	write(1, "\n", 1);
-	return (0);
 }
 
