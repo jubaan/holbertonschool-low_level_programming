@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
  * main - prints its name
@@ -11,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	_putchar(argv[0]);
+	write(1, &argv[0], 1);
 
 	return (0);
 }
