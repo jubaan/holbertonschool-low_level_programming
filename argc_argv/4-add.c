@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	int addend_1;
 	int addend_2;
 	int sum;
-	int i = 0;
+	int i = 1;
 
 	if (argc == 1)
 	{
