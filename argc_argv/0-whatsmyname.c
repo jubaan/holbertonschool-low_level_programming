@@ -14,9 +14,9 @@ int main(int argc, char *argv[])
 {
 	int i = 0;
 
-	while (argv[0][i] != '\0')
+	while (argv[argc - 1][i] != '\0')
 	{
-		_putchar(argv[0][i]);
+		_putchar(argv[argc - 1][i]);
 		i++;
 	}
 
