@@ -12,15 +12,19 @@
 
 int main(int argc, char *argv[])
 {
-	int multiplicand = atoi(argv[1]);
-	int multiplier = atoi(argv[2]);
-	int product = multiplicand * multiplier;
+	int multiplicand;
+	int multiplier;
+	int product;
 
 	if (argc != 3)
 	{
-		printf("Error\n");
+		print("Error\n");
 		return (1);
 	}
+
+	multiplicand = atoi(argv[1]);
+	multiplier = atoi(argv[2]);
+	product = multiplicand * multiplier;
 
 	printf("%d\n", product);
 
