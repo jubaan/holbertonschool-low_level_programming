@@ -13,33 +13,34 @@
 
 int main(int argc, char *argv[])
 {
-	int addend_1;
-	int addend_2;
-	int sum;
+	int sum = 0;
 	int i = 1;
+	int j;
 
-	if (argc == 1)
+	if (argc < 1)
 	{
-		printf("%d\n", 0);
+		printf("0\n");
 		return (0);
 	}
 
 	while (i < argc)
 	{
-		if (!isdigit(atoi(argv[i])))
+		j = 0;
+
+		while (argv[i][j] != '\0')
 		{
-			printf("Error\n");
-			return (1);
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+
+			sum += atoi(&argv[i][j]);
+			j++;
 		}
 
 		i++;
 	}
-
-	addend_1 = atoi(argv[1]);
-	addend_2 = atoi(argv[2]);
-	sum = addend_1 + addend_2;
-
-	printf("%d\n", sum);
 
 	return (0);
 }
