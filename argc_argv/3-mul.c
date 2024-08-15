@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int multiplier = atoi(argv[2]);
 	int product = multiplicand * multiplier;
 
-	if (multiplicand == NULL || multiplier == NULL)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
