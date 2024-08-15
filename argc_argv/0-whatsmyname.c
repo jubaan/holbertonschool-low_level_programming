@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	write(1, &argv[argc], 1);
+	write(1, &argv[argc - 1], 1);
 
 	return (0);
 }
